@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#476c40">
+    <title>X'mas Deco</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsividade.css">
+</head>
+
+<body>
+    <nav class="site-nav" aria-label="Navegação principal">
+        <div class="nav-container">
+            <a class="logo-link" href="index.html" aria-label="X'mas Deco - início">
+                <img src="img/logo.png" alt="Logo da X'mas Deco" class="logo">
+            </a>
+            <!-- Contador de Natal -->
+<div class="contador-natal" id="contadorNatal">
+    🎄 Carregando contador...
+</div>
+
+            <div class="nav-links">
+                <a href="#home">Início</a>
+                <a href="#catalogo">Catálogo</a>
+                <a href="#sobrenos">Nossa História</a>
+                <a href="contato.html">Contato</a>
+            </div>
+
+            <form id="searchForm" class="search-form" role="search">
+                <input type="search" id="searchInput" name="procurar"
+                       placeholder="Pesquisar produtos..." aria-label="Pesquisar produtos">
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+
+    <main>
+        <div id="neve-carrossel"></div>
+
+<button id="btnNeve" type="button">
+    ❄️ Ativar neve
+</button>
+        <section class="banner-carousel-container" id="home" aria-label="Destaques">
+            <div class="fundo-fixo" aria-hidden="true"></div>
+
+            <div class="carousel-track">
+                <article class="carousel-slide slide-1">
+                    <div class="slide-content santa-slide">
+                        <div class="imagem-parallax">
+                            <img src="img/papainoelpropaganda.png"
+                                 class="santa-img"
+                                 alt="Papai Noel segurando presentes">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="carousel-slide slide-2">
+                  <div class="slide-content santa-slide">
+                        <div class="imagem-parallax">
+                            <img src="img/meninapropaganda.png"
+                                 class="santa-img"
+                                 alt="Menininha feliz">
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <button class="botão-seta prev-btn" type="button"
+                    aria-label="Slide anterior">&lt;</button>
+            <button class="botão-seta next-btn" type="button"
+                    aria-label="Próximo slide">&gt;</button>
+        </section>
+
+        <section class="grade-categorias" id="catalogo" aria-label="Categorias">
+            <a href="decoarvore.html" class="botao-categoria">
+                <img src="img/arvore.png" alt="Decoração de árvore">
+                <span class="titulo-secao">Decoração de Árvore</span>
+            </a>
+
+            <a href="interno.html" class="botao-categoria">
+                <img src="img/interno.png" alt="Decoração interna">
+                <span class="titulo-secao">Decoração Interna</span>
+            </a>
+
+            <a href="meias-e-globos.html" class="botao-categoria">
+                <img src="img/meias.png" alt="Meias decorativas">
+                <span class="titulo-secao">Meias e Globos de Neve</span>
+            </a>
+
+            <a href="externo.html" class="botao-categoria">
+                <img src="img/externo.png" alt="Decoração externa">
+                <span class="titulo-secao">Decoração Externa</span>
+            </a>
+        </section>
+
+        <section class="slides-container" id="acomodacoes"
+                 aria-label="Promoções em destaque">
+            <div class="slides" id="slide">
+                <article class="slide-item active">
+                    <img src="img/portacomercial.jpeg" alt="Promoção de decoração natalina"
+                         class="card-image">
+                </article>
+
+                <article class="slide-item">
+                    <img src="img/renabrilhante.png" alt="Enfeite natalino"
+                         class="card-image">
+                </article>
+
+                <article class="slide-item">
+                    <img src="img/biscoito.png" alt="Enfeite de biscoito natalino"
+                         class="card-image">
+                </article>
+            </div>
+
+            <button class="btn-carrossel prev" id="btnPrev" type="button"
+                    aria-label="Promoção anterior">‹</button>
+            <button class="btn-carrossel next" id="btnNext" type="button"
+                    aria-label="Próxima promoção">›</button>
+            <div class="carrossel-dots" id="dotsContainer"
+                 aria-label="Selecionar promoção"></div>
+        </section>
+    </main>
+
+    <div class="music-controls" aria-label="Controles de música">
+        <button id="btnTocar" class="music-button" type="button"
+                aria-label="Tocar música" title="Tocar música">▶</button>
+        <button id="btnParar" class="music-button" type="button"
+                aria-label="Parar música" title="Parar música">■</button>
+        <button id="btnInicio"
+        class="music-button voltar-inicio escondido" type="button" aria-label="Voltar ao início" title="Voltar ao início"> ↑
+        </button>
+    </div>
+
+<audio id="musicaNatal" loop>
+    <source src="audio/snowmansia.mp3" type="audio/mpeg">
+</audio>
+    <script src="script.js"></script>
+<footer class="site-footer" aria-label="Rodapé do site">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Sobre Nós</h3>
+            <p>A X'mas Deco é especializada em decoração natalina, oferecendo produtos de alta qualidade para tornar seu Natal inesquecível.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contato</h3>
+                <li>Email: contato@xmasdeco.com</li>
+                <li>Telefone: (19) 99380-1902</li>
+                <li>Instagram: @xmasdeco</li>
+        <p>Site feito por: Isadora Almeida, Nicolas Almeida e Yasmin Almeida. </p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

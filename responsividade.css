@@ -1,0 +1,211 @@
+/* =========================================
+   RESPONSIVIDADE — TABLETS E CELULARES
+   ========================================= */
+
+@media (max-width: 900px) {
+    .nav-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 16px;
+    }
+
+    .logo-link {
+        margin-right: 8px;
+    }
+
+    .search-form {
+        flex: 1 1 100%;
+        max-width: 420px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .site-nav {
+        padding: 10px 12px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        min-height: auto;
+        gap: 9px;
+    }
+
+    .logo {
+        width: 82px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        gap: 2px;
+    }
+
+    .nav-links a {
+        padding: 8px 9px;
+        font-size: 0.98rem;
+    }
+
+    .search-form {
+        width: 100%;
+        max-width: 420px;
+        min-width: 0;
+    }
+
+    .banner-carousel-container,
+    .carousel-track,
+    .carousel-slide,
+    .slide-content {
+        min-height: 370px;
+    }
+
+    .santa-img {
+        width: clamp(280px, 76vw, 430px);
+        max-height: 355px;
+    }
+
+    .text-group {
+        padding: 24px 48px;
+    }
+
+    .grade-categorias {
+        gap: 18px;
+        margin-top: 24px;
+        padding: 14px;
+    }
+
+    .botao-categoria img {
+        width: min(100%, 190px);
+    }
+
+    .botao-categoria span {
+        font-size: 0.98rem;
+    }
+
+    .slides-container {
+        width: calc(100% - 24px);
+        margin: 28px auto;
+    }
+
+    .slide-item .card-image {
+        height: 270px;
+        object-fit: contain;
+    }
+
+    .catalogo-grid {
+        grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+        gap: 13px;
+        padding: 16px 12px;
+    }
+
+    .card-produto {
+        padding: 10px;
+    }
+
+    .produto-img {
+        height: 135px;
+    }
+
+    .music-controls {
+        left: 12px;
+        bottom: 12px;
+    }
+
+    .music-button {
+        width: 42px;
+        height: 42px;
+    }
+    
+    .contador-natal {
+        white-space: normal;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .nav-links {
+        gap: 0;
+    }
+
+    .nav-links a {
+        padding: 7px 6px;
+        font-size: 0.88rem;
+    }
+
+    .search-form input {
+        font-size: 0.88rem;
+    }
+
+    .search-form button {
+        padding: 9px 11px;
+    }
+
+    .banner-carousel-container,
+    .carousel-track,
+    .carousel-slide,
+    .slide-content {
+        min-height: 330px;
+    }
+
+    .santa-img {
+        width: 88vw;
+        max-height: 315px;
+    }
+
+    .botão-seta,
+    .btn-carrossel {
+        width: 38px;
+        height: 38px;
+        font-size: 1.25rem;
+    }
+
+    .prev-btn,
+    .btn-carrossel.prev {
+        left: 7px;
+    }
+
+    .next-btn,
+    .btn-carrossel.next {
+        right: 7px;
+    }
+
+    .grade-categorias {
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .botao-categoria span {
+        font-size: 0.88rem;
+    }
+
+    .catalogo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
+@media (max-width: 768px) {
+    .imagem-parallax {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .santa-img {
+        width: 450px !important;
+        max-width: none !important;
+        max-height: none !important;
+    }
+}
+

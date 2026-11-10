@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#476c40">
+    <title>Meias e Globos de Neve| X'mas Deco</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsividade.css">
+</head>
+<body class="pagina-interna">
+    <nav class="site-nav" aria-label="Navegação principal">
+        <div class="nav-container nav-simples">
+            <a class="logo-link" href="index.html" aria-label="Voltar ao início">
+                <img src="img/logo.png" alt="Logo da X'mas Deco" class="logo">
+            </a>
+            <a href="index.html" class="home-button">Voltar ao início</a>
+        </div>
+    </nav>
+
+    <main>
+        <div id="container-produtos" class="catalogo-grid"
+             aria-live="polite"></div>
+    </main>
+    <div class="music-controls" aria-label="Controles de música">
+        <button id="btnTocar" class="music-button" type="button"
+                aria-label="Tocar música" title="Tocar música">▶</button>
+        <button id="btnParar" class="music-button" type="button"
+                aria-label="Parar música" title="Parar música">■</button>
+        <button id="btnInicio"
+        class="music-button voltar-inicio escondido" type="button" aria-label="Voltar ao início" title="Voltar ao início"> ↑
+        </button>
+    </div>
+    <script src="meias-e-globos.js"></script>
+    <script src="script.js"></script>
+    <audio id="musicaNatal" loop>
+        <source src="audio/snowmansia.mp3" type="audio/mpeg">
+</body>
+</html>
